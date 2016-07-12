@@ -76,6 +76,7 @@ public class BaseCalendarEvent implements CalendarEvent {
      */
     private double mTemperature;
 
+    private Drawable mMoreInfos;
     // region Constructor
 
     /**
@@ -125,7 +126,16 @@ public class BaseCalendarEvent implements CalendarEvent {
         this.mEndTime = endTime;
         this.mAllDay = allDay;
     }
-
+    public BaseCalendarEvent(String title, String description, String location, int color, Calendar startTime, Calendar endTime, boolean allDay, Drawable moreInfos) {
+        this.mTitle = title;
+        this.mDescription = description;
+        this.mLocation = location;
+        this.mColor = color;
+        this.mStartTime = startTime;
+        this.mEndTime = endTime;
+        this.mAllDay = allDay;
+        this.mMoreInfos = moreInfos
+    }
     public BaseCalendarEvent(BaseCalendarEvent calendarEvent) {
         this.mId = calendarEvent.getId();
         this.mColor = calendarEvent.getColor();
