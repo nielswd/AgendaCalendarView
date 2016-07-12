@@ -165,6 +165,15 @@ public class BaseCalendarEvent implements CalendarEvent {
 
     // region Getters/Setters
 
+    public Drawable getMoreInfos() {
+        return mMoreInfos;
+    }
+
+    public void setMoreInfos(Drawable mInfos) {
+        this.mMoreInfos = mInfos;
+    }
+
+
     public int getColor() {
         return mColor;
     }
